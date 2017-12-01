@@ -37,7 +37,7 @@ describe('2016 - Day 1', function() {
       let intersection = null;
 
       let pos = navigate('R8, R4, R4, R8', (from, to) => {
-        var tracks = trace(from, to);
+        var tracks = [...trace(from, to)];
 
         tracks.forEach(pos => {
           if (path.find((oldPos) => pos.x == oldPos.x && pos.y == oldPos.y)) {
@@ -56,7 +56,7 @@ describe('2016 - Day 1', function() {
       let intersection = null;
 
       let pos = navigate(input, (from, to) => {
-        var tracks = trace(from, to);
+        var tracks = [...trace(from, to)];
 
         tracks.forEach(pos => {
           if (path.find((oldPos) => pos.x == oldPos.x && pos.y == oldPos.y)) {

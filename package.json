@@ -4,15 +4,15 @@
   "description": "Advent of Code",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --require babel-register"
+    "test": "mocha --require babel-polyfill --require babel-register"
   },
   "author": "vegar",
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "mocha": "^4.0.1"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
