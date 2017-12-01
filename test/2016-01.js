@@ -1,4 +1,4 @@
-import {distance, navigate, trace} from '../index.js';
+import {distance, navigate, trace} from '../lib';
 
 let assert = require('assert');
 

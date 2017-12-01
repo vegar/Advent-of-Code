@@ -1,4 +1,4 @@
-import {captcha} from '../index.js';
+import {captcha} from '../lib';
 
 let assert = require('assert');
 
