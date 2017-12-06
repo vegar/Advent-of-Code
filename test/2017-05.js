@@ -1,4 +1,4 @@
-import { mazeIterator, makeIncOrDecFunc, incFunc } from '../lib';
+import { mazeIterator, makeIncOrDecFunc, incFunc, readFileLinesAsNumbers } from '../lib';
 import fs from 'fs';
 
 let assert = require('chai').assert;
@@ -9,14 +9,7 @@ describe('2017 - Day 5', function() {
   let input;
 
   before('load input', function() {
-      let maze = fs
-        .readFileSync('./input/2017-05.txt')
-        .toString()
-        .split("\n")
-        .map(l => l === '' ? '' : parseInt(l, 10));
-      maze.pop();
-
-      input = maze;
+    input = readFileLinesAsNumbers('./input/2017-05.txt')
   });
 
   describe('Part 1', function() {
@@ -107,7 +100,7 @@ describe('2017 - Day 5', function() {
     });
 
     it('How many steps does it take to reach the exit?  -> 27283023', function() {
-      this.timeout(5000);
+      this.timeout(60000);
 
       let itr = mazeIterator(input, makeIncOrDecFunc({treshhold: 3}));
 
