@@ -2,7 +2,7 @@ import {checksum, hiLowAccumulator, lineChecksum, evenlyDivAccumulator} from '..
 
 let assert = require('assert');
 
-describe.only('2017 - Day 2', function() {
+describe('2017 - Day 2', function() {
 
   describe('hiLowAccumulator', function() {
     it('The first rows largest and smallest values are 9 and 1, and their difference is 8', function() {
