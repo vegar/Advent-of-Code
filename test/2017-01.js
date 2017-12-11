@@ -38,7 +38,7 @@ describe('2017 - Day 1', function() {
 
     it('1212 produces 6: the list contains 4 items, and all four digits match the digit 2 items ahead.', function() {
       assert.equal(halfwayAroundCaptcha('1212'), 6);
-    })
+    });
 
     it('1221 produces 0, because every comparison is between a 1 and a 2.', function() {
       assert.equal(halfwayAroundCaptcha('1221'), 0);

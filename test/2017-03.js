@@ -1,4 +1,4 @@
-import {distance, indexToCoord, coordToIndex, adjecent, sumAdjecent} from '../lib';
+import {distance, indexToCoord, sumAdjecent} from '../lib';
 
 let assert = require('chai').assert;
 
@@ -7,25 +7,25 @@ describe('2017 - Day 3', function() {
   let input = 361527;
 
   describe('Part 1', function() {
-    it(`Data from square 1 is carried 0 steps, since it's at the access port.`, function() {
+    it('Data from square 1 is carried 0 steps, since it\'s at the access port.', function() {
       let coord = indexToCoord(1);
 
       assert.equal(0, distance(coord));
     });
 
-    it(`Data from square 12 is carried 3 steps, such as: down, left, left.`, function() {
+    it('Data from square 12 is carried 3 steps, such as: down, left, left.', function() {
       let coord = indexToCoord(12);
 
       assert.equal(3, distance(coord));
     });
 
-    it(`Data from square 23 is carried only 2 steps: up twice.`, function() {
+    it('Data from square 23 is carried only 2 steps: up twice.', function() {
       let coord = indexToCoord(23);
 
       assert.equal(2, distance(coord));
     });
 
-    it(`Data from square 1024 must be carried 31 steps.`, function() {
+    it('Data from square 1024 must be carried 31 steps.', function() {
       let coord = indexToCoord(1024);
 
       let distance = Math.abs(coord[0]) + Math.abs(coord[1]);

@@ -1,4 +1,4 @@
-import {readFileLines, readFileLinesAsNumbers} from '../lib'
+import {readFileLines, readFileLinesAsNumbers} from '../lib';
 
 let assert = require('chai').assert;
 

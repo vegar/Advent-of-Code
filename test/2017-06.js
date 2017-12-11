@@ -62,7 +62,6 @@ describe('2017 - Day 6', function() {
       let banks = [4,1,15,12,0,9,9,5,5,8,7,3,14,5,12,3];
       let count = 0;
 
-      let cycle;
       while(true) {
         count++;
         banks = redistributeMax(banks);

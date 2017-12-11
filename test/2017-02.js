@@ -25,7 +25,7 @@ describe('2017 - Day 2', function() {
 
     it('Empty lines yields 0', function() {
       assert.equal(0, lineChecksum('', hiLowAccumulator));
-    })
+    });
   });
 
   describe('evenlyDivAccumulator', function() {
@@ -64,7 +64,7 @@ describe('2017 - Day 2', function() {
 184 314 178 242 145 410 257 342 183 106 302 320 288 151 449 127
 175 5396  1852  4565  4775  665 4227  171 4887  181 2098  4408  2211  3884  2482  158
 1717  3629  244 258 281 3635  235 4148  3723  4272  3589  4557  4334  4145  3117  4510
-55  258 363 116 319 49  212 44  303 349 327 330 316 297 313 67`
+55  258 363 116 319 49  212 44  303 349 327 330 316 297 313 67`;
 
   describe('Part 1 - hi-low checksum', function() {
 
@@ -72,7 +72,7 @@ describe('2017 - Day 2', function() {
       var spreadsheet =
 `5 1 9 5
 7 5 3
-2 4 6 8`
+2 4 6 8`;
       assert.equal(18, checksum(spreadsheet, hiLowAccumulator));
     });
 
@@ -90,11 +90,11 @@ describe('2017 - Day 2', function() {
 9 4 7 3
 3 8 6 5`;
 
-      assert.equal(9, checksum(spreadsheet, evenlyDivAccumulator))
+      assert.equal(9, checksum(spreadsheet, evenlyDivAccumulator));
     });
 
     it('What is the sum of each rows result in your puzzle input?  --> 221', function() {
       assert.equal(221, checksum(input, evenlyDivAccumulator));
-    })
+    });
   });
 });

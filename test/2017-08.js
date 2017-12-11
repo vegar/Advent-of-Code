@@ -1,4 +1,4 @@
-import {lines, readFileLines, parser, evaluateExp, execute} from '../lib';
+import {lines, readFileLines, parser, execute} from '../lib';
 
 let assert = require('chai').assert;
 
@@ -8,7 +8,7 @@ describe('2017 - Day 8', function() {
 `b inc 5 if a > 1
 a inc 1 if b < 5
 c dec -10 if a >= 1
-c inc -20 if c == 10`
+c inc -20 if c == 10`;
 
   describe('Part 1', function() {
 
@@ -17,7 +17,7 @@ c inc -20 if c == 10`
       let t = execute(op, { b: 0});
 
       assert.deepEqual(t, {b: 0});
-    })
+    });
 
 
     it('a is increased by 1 (to 1) because b is less than 5 (it is 0).', function() {
@@ -26,7 +26,7 @@ c inc -20 if c == 10`
 
       assert.deepEqual(t, {a: 1,
         '__max': 1});
-    })
+    });
 
     it('c is decreased by -10 (to 10) because a is now greater than or equal to 1 (it is 1).', function() {
       let op = parser(lines(example)[2]);
@@ -55,9 +55,9 @@ c inc -20 if c == 10`
       let max = Object.values(registry)
         .reduce((max, curr) => Math.max(max, curr));
 
-      assert.equal(max, 5075)
+      assert.equal(max, 5075);
 
-    })
+    });
   });
 
   describe('Part 2', function() {

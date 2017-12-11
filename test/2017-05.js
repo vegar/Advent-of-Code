@@ -1,5 +1,4 @@
 import { mazeIterator, makeIncOrDecFunc, incFunc, readFileLinesAsNumbers } from '../lib';
-import fs from 'fs';
 
 let assert = require('chai').assert;
 
@@ -9,7 +8,7 @@ describe('2017 - Day 5', function() {
   let input;
 
   before('load input', function() {
-    input = readFileLinesAsNumbers('./input/2017-05.txt')
+    input = readFileLinesAsNumbers('./input/2017-05.txt');
   });
 
   describe('Part 1', function() {

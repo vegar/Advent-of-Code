@@ -14,7 +14,7 @@ describe.only('2017 - Day 11', function() {
     s:  ([x,y]) => [  x,--y,],
     sw: ([x,y]) => [--x,--y,],
     nw: ([x,y]) => [--x,  y,],
-  }
+  };
 
   describe('Part 1', function() {
     const distance = (path) => {
@@ -66,7 +66,7 @@ describe.only('2017 - Day 11', function() {
 
       let max = 0;
 
-      let end = steps.reduce((position, step) => {
+      steps.reduce((position, step) => {
         let newPosition = hexMove[step](position);
         let newDistance = distanceHexToOrigo(newPosition);
 

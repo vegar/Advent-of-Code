@@ -6,7 +6,7 @@ describe('2017 - Day 4', function() {
 
   let input;
   before('read file', function() {
-    input = readFileLines('./input/2017-04.txt')
+    input = readFileLines('./input/2017-04.txt');
   });
 
   describe('Part 1', function() {
@@ -38,7 +38,7 @@ describe('2017 - Day 4', function() {
             :  count;
         }, 0);
 
-        assert.equal(455, count);
+      assert.equal(455, count);
     });
 
   });
@@ -83,7 +83,7 @@ describe('2017 - Day 4', function() {
             :  count;
         }, 0);
 
-        assert.equal(186, count);
+      assert.equal(186, count);
     });
 
   });

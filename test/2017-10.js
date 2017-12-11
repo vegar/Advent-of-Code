@@ -1,4 +1,4 @@
-import { sum, readFile, parseStream, range, knotHash, asBytes, toDenseHash, reverseSegment } from '../lib';
+import { readFile, range, knotHash, asBytes, toDenseHash, reverseSegment } from '../lib';
 import { assert } from 'chai';
 
 describe('2017 - Day 10', function() {
@@ -116,7 +116,7 @@ describe('2017 - Day 10', function() {
 
         assert.equal(result, '63960835bcdc130f0b66d7ff4f6a5a8e');
       });
-    })
+    });
 
     it('Treating your puzzle input as a string of ASCII characters, what is the Knot Hash of your puzzle input? -->', function(){
       let result = knotHash(lengths);

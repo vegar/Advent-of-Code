@@ -4,7 +4,7 @@ import assert from 'assert';
 describe('2017 - Day 9', function() {
 
   let input;
-  before(() => input = readFile('./input/2017-09.txt'))
+  before(() => input = readFile('./input/2017-09.txt'));
 
   describe('Part 1', function() {
 

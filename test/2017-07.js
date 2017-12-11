@@ -4,7 +4,7 @@ let assert = require('chai').assert;
 
 describe('2017 - Day 7', function() {
 
-    const example =
+  const example =
 `pbga (66)
 xhth (57)
 ebii (61)
