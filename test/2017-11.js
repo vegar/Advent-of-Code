@@ -1,7 +1,7 @@
 import { readFile, distanceHexToOrigo } from '../lib';
 import { assert } from 'chai';
 
-describe.only('2017 - Day 11', function() {
+describe('2017 - Day 11', function() {
 
   let path;
   before(() => path = readFile('./input/2017-11.txt').trim());
