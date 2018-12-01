@@ -1,7 +1,7 @@
 import {readFileLines} from '../lib';
 import {assert} from 'chai';
 
-describe.only('2017 - Day 18', function(){
+describe('2017 - Day 18', function(){
   const getValue = (registry, value) => {
     return isNaN(parseInt(value, 10)) ? registry[value] : parseInt(value, 10);
   };

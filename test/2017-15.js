@@ -87,7 +87,7 @@ describe('2017 - Day 15', function() {
       assert.equal(equal, true);
     });
 
-    it.skip('In the example above, the judge would eventually find a total of 588 pairs that match in their lowest 16 bits.', function(){
+    it('In the example above, the judge would eventually find a total of 588 pairs that match in their lowest 16 bits.', function(){
       this.timeout(100000);
       let genA = exampleGenA();
       let genB = exampleGenB();
@@ -100,7 +100,7 @@ describe('2017 - Day 15', function() {
       assert.equal(count, 588);
     });
 
-    it.skip('After 40 million pairs, what is the judge\'s final count?', function(){
+    it('After 40 million pairs, what is the judge\'s final count?', function(){
       this.timeout(100000);
       let genA = inputGenA();
       let genB = inputGenB();
@@ -139,7 +139,7 @@ describe('2017 - Day 15', function() {
       assert.equal(count, 1);
     });
 
-    it.skip('Using the values from the example above, after five million pairs, the judge would eventually find a total of 309 pairs that match in their lowest 16 bits.', function() {
+    it('Using the values from the example above, after five million pairs, the judge would eventually find a total of 309 pairs that match in their lowest 16 bits.', function() {
       this.timeout(100000);
       let genA = exampleGenA();
       let genB = exampleGenB();
