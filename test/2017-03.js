@@ -1,4 +1,4 @@
-import {distance, indexToCoord, sumAdjecent} from '../lib';
+import {distance, indexToCoord, sumAdjecent, coordToIndex} from '../lib';
 
 let assert = require('chai').assert;
 
@@ -38,6 +38,16 @@ describe('2017 - Day 3', function() {
 
       assert.equal(326, distance(coord));
     });
+
+    it('geocache', function() {
+      let idx = coordToIndex({y: 416, x: 614});
+
+      console.log(idx);
+
+      console.log('32:', indexToCoord(32));
+      console.log('20:', indexToCoord(20));
+
+    })
   });
 
   describe('Part 2', function() {
