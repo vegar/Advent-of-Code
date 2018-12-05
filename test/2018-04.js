@@ -2,7 +2,7 @@ import {readFileLines, lines} from '../lib';
 
 let assert = require('assert');
 
-describe.only('2018 - Day 4', function() {
+describe('2018 - Day 4', function() {
 
   let input;
   before(() => input = readFileLines('./input/2018-04.txt'));
@@ -84,16 +84,11 @@ describe.only('2018 - Day 4', function() {
           }
         });
 
-        //console.log(JSON.stringify(result));
+      var guard = Object.entries(result).reduce((acc, curr) => {
+        if (!acc[1].max) return curr;
 
-        var guard = Object.entries(result).reduce((acc, curr) => {
-          console.log(`ACC: ${acc[0]} - ${acc[1].minutes[acc[1].max]}`);
-          console.log(`CURR: ${curr[0]} - ${curr[1].minutes[curr[1].max]}`);
-
-          if (!acc[1].max) return curr;
-
-          return curr[1].minutes[curr[1].max] > acc[1].minutes[acc[1].max] ? curr : acc;
-        });
+        return curr[1].minutes[curr[1].max] > acc[1].minutes[acc[1].max] ? curr : acc;
+      });
 
       //console.log(JSON.stringify(guard));
       assert.equal(guard[0] * guard[1].max, 53427);
