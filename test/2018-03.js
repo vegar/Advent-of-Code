@@ -55,7 +55,7 @@ describe('2018 - Day 3', function() {
 
       let single = Object.entries(claims).find(v => v[1] == true);
 
-      assert.equal(single[0], 0);
+      assert.equal(single[0], 686);
     });
   });
 });
