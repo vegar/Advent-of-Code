@@ -13,8 +13,7 @@
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "chai": "^4.1.2",
-    "eslint": "^4.13.0",
-    "mocha": "^4.0.1"
-  },
-  "dependencies": {}
+    "eslint": "^6.7.2",
+    "mocha": "^6.2.2"
+  }
 }
