@@ -2,7 +2,7 @@ import {readFileLines} from '../lib';
 
 let assert = require('assert');
 
-describe.only('2018 - Day 7', function() {
+describe('2018 - Day 7', function() {
 
   let input;
   beforeEach(() => input = readFileLines('./input/2018-07.txt'));
