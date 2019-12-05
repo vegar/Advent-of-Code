@@ -1,6 +1,6 @@
 import { assert } from 'chai';
 
-describe.only('2019 - Day 04', function() {
+describe('2019 - Day 04', function() {
   const inputMin = 109165;
   const inputMax = 576723;
 
