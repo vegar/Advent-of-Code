@@ -21,7 +21,7 @@ describe('2019 - Day 05', function() {
     it('After providing 1 to the only input instruction and passing all the tests, what diagnostic code does the program produce?', () => {
       const output = [];
 
-      const p = executeIntCode(program, 1, (v) => output.push(v));
+      executeIntCode(program, 1, (v) => output.push(v));
 
       assert.equal(output.pop(), 6761139);
     });
@@ -33,16 +33,15 @@ describe('2019 - Day 05', function() {
     it('3,9,8,9,10,9,4,9,99,-1,8 - Using position mode, consider whether the input is equal to 8; output 0 (if it is not).', () => {
       let output = null;
 
-      const p = executeIntCode([3,9,8,9,10,9,4,9,99,-1,8], 14, (v) => output = v);
-      assert.sameOrderedMembers(p, [3,9,8,9,10,9,4,9,99,0,8]);
+      executeIntCode([3,9,8,9,10,9,4,9,99,-1,8], 14, (v) => output = v);
+
       assert.equal(output, 0);
     });
 
     it('3,9,8,9,10,9,4,9,99,-1,8 - Using position mode, consider whether the input is equal to 8; output 1 (if it is)', () => {
       let output = null;
 
-      const p = executeIntCode([3,9,8,9,10,9,4,9,99,-1,8], 8, (v) => output = v);
-      assert.sameOrderedMembers(p, [3,9,8,9,10,9,4,9,99,1,8]);
+      executeIntCode([3,9,8,9,10,9,4,9,99,-1,8], 8, (v) => output = v);
       assert.equal(output, 1);
     });
 
