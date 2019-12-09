@@ -1,7 +1,7 @@
 import { assert } from 'chai';
 import { readFile } from '../lib';
 
-describe.only('2019 - Day 08', function() {
+describe('2019 - Day 08', function() {
   const input = readFile('./input/2019-08.txt')
 
 
